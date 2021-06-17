@@ -1,2 +1,2 @@
-const first =document.querySelector(".first")
+const first =document.querySelector(".active")
 first.style.color="#fff"
