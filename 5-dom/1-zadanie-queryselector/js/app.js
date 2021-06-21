@@ -1,1 +1,1 @@
-document.querySelectorAll(".el.first-attempt").classList.add(".active")
+document.querySelector(".el.first-attempt").classList.add(".active")
