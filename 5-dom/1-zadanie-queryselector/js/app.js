@@ -9,3 +9,8 @@ elements.forEach(el=>{
     el.dataset.elActive="";
   }
 })
+
+const hack=document.querySelectorAll(".hack")
+for (const el of hack){
+  el.setAttribute("title", "hacking")
+}
