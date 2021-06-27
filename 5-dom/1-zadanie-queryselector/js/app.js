@@ -29,8 +29,8 @@ elements.forEach(el=>{
 
 const attrib = document.querySelectorAll(".attrib")
 for (const el of attrib) {
-attrib.toggleAttribute("data-hack-active")
-attrib.removeAttribute("data-hack-inactive")
+el.toggleAttribute("data-hack-active");
+el.removeAttribute("data-hack-inactive");
 }
 
 const lastAttempt= document.querySelectorAll(".last-attempt")
