@@ -27,11 +27,13 @@ elements.forEach(el=>{
   }
   })
 
-const attrib = document.querySelector(".attrib")
+const attrib = document.querySelectorAll(".attrib")
+for (const el of attrib) {
 attrib.toggleAttribute("data-hack-active")
 attrib.removeAttribute("data-hack-inactive")
+}
 
-const lastAttempt= document.querySelector(".last-attempt")
+const lastAttempt= document.querySelectorAll(".last-attempt")
 for  (const el of lastAttempt){
   el.span.style.display="none";}
 
