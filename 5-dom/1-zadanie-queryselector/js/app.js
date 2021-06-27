@@ -6,6 +6,6 @@ for (const el of firstAttempt){
 const elements = document.querySelectorAll ("body *")
 for (const el of elements){
   if (el.hasAttribute("data-border")){
-   el.toggleAttribute("data-el-active")
+   el.dataset.elActive
   }
 }
