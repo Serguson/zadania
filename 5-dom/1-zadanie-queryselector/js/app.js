@@ -14,3 +14,8 @@ const hack=document.querySelectorAll(".hack")
 for (const el of hack){
   el.setAttribute("title", "hacking")
 }
+
+const hijack = document.querySelectorAll(".hijack")
+for (const el of hijack){
+  el.removeAttribute ("title")
+}
