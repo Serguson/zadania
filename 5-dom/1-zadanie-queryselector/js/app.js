@@ -25,4 +25,4 @@ elements.forEach(el=>{
     el.style.color="red";
     el.style.fontSize="15px"
   }
-  }
+  })
