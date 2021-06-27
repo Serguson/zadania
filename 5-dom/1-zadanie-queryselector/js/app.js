@@ -23,4 +23,6 @@ for (const el of hijack){
 elements.forEach(el=>{
   if (el.classList.contains("st1")&&el.classList.contains("st2")){
     el.style.color="red";
-    el.style.fontSize="15px"}
+    el.style.fontSize="15px"
+  }
+  }
