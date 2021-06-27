@@ -1,1 +1,2 @@
-document.querySelectorAll(".el.first-attempt").classList.add(".active")
+const firstAttempt=document.querySelectorAll(".el.first-attempt")
+firstAtempt.classList.add(".active")
