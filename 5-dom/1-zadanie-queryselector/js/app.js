@@ -33,5 +33,5 @@ attrib.removeAttribute("data-hack-inactive")
 
 const lastAttempt= document.querySelector(".last-attempt")
 for  (const el of lastAttempt){
-  el.style.display="none";}
+  el.span.style.display="none";}
 
