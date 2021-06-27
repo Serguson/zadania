@@ -3,8 +3,8 @@ for (const el of firstAttempt){
   el.classList.add("active")
 }
 const elements = document.querySelectorAll ("body *")
-elements.forEach(el=>{
+for (const el of elements){
   if (el.tagName==="data-border"){
-  el.setAttribute(data-el-active);
+   el.dataset.elActive
   }
-})
+}
