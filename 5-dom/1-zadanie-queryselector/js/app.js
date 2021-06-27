@@ -33,7 +33,7 @@ el.toggleAttribute("data-hack-active");
 el.removeAttribute("data-hack-inactive");
 }
 
-const lastAttempt= document.querySelectorAll(".last-attempt.span")
+const lastAttempt= document.querySelectorAll(".last-attempt span")
 for  (const el of lastAttempt){
   el.style.display="none";}
 
