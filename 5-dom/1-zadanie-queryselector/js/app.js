@@ -19,3 +19,8 @@ const hijack = document.querySelectorAll(".hijack")
 for (const el of hijack){
   el.removeAttribute ("title")
 }
+
+elements.forEach(el=>{
+  if (el.classList.contains("st1")&&el.classList.contains("st2")){
+    el.style.color="red";
+    el.style.fontSize="15px"}
