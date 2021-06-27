@@ -26,3 +26,9 @@ elements.forEach(el=>{
     el.style.fontSize="15px"
   }
   })
+
+const attrib = document.querySelector(".attrib")
+for (const el of attrib){
+  el.toggleAttribute(data-hack-active);
+  el.removeAttribute(data-hack-inactive);
+}
