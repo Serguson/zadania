@@ -5,6 +5,6 @@ for (const el of firstAttempt){
 const elements = document.querySelectorAll ("body *")
 for (const el of elements){
   if (el.tagName==="data-border"){
-   el.dataset.elActive
+   el.dataset.elActive=""
   }
 }
