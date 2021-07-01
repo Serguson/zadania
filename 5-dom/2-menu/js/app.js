@@ -5,7 +5,7 @@ for (const el of parent){
 el.addEventListener("click", e => {
                         e.preventDefault();
                        console.log ("Kliknięto!");
-                        navElActive.forEach (active=>active.classList.remove("nav-el-active"); 
+                        navElActive.forEach (active=>active.classList.remove("nav-el-active")); 
                        e.target.classList.add("nav-el-active");
                      
 })
