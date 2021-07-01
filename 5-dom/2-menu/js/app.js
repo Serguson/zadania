@@ -1,4 +1,4 @@
-const parent=document.querySelectorAll("li.nav-el");
-const navEl=document.querySelectorAll("a.nav-link");
+const parent=document.querySelector("li.nav-el");
+const navEl=document.querySelector("a.nav-link");
 parent.addEventListener("click",function () {
                        console.log ("Kliknięto!");})
