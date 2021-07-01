@@ -11,6 +11,6 @@ el.addEventListener("click", e => {
 }
 navElActive=document.querySelector("li.nav-el-active");
 for (const el of navElActive){
-  el.addEventListener("click", e==> {
+  el.addEventListener("click", e => {
                       e.preventDefault();
                       navElActive.classList.remove("nav-el-active");})}
