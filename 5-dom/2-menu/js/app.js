@@ -1,3 +1,3 @@
-const navEl = document.querySelector(".nav-el");
+const navEl = document.querySelectorAll(".nav-el");
 navEl.addEventListener("click", e=>{
-classList.add(".nav-el-active")})
+console.log("Kliknięto"})
