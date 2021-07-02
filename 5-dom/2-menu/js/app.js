@@ -4,7 +4,7 @@ let navElActive=document.getElementsByClassName("nav-el-active");
 for (const el of navLink){
   el.addEventListener("click", e => {
     e.preventDefault();
-    navElActive.classList.remove("nav-el-active");
+    for (const el of navElActive) {el.classList.remove("nav-el-active")};
     el.parentElement.classList.toggle("nav-el-active");
   })
 }
