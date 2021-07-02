@@ -3,9 +3,9 @@ const tabElActive = document.getElementsByClassName("tab-el-active")
 const tabLink = document.getElementsByClassName("tab-link")
 const tabContent = document.getElementsByClassName("tab-content")
 const tabContentActive = document.getElementsByClassName("tab-content-active")
-const js = document.getElementsById("js")
-const python = document.getElementsById("python")
-const TurboPascal = document.getElementsById("turbo-pascal")
+const js = document.getElementById("js")
+const python = document.getElementById("python")
+const TurboPascal = document.getElementById("turbo-pascal")
 for (const el of tabEl) {el.addEventListener("click", e=> {
   console.log("Kliknięto!");
   for (const el of tabElActive) {el.classList.remove("tab-el-active")};
