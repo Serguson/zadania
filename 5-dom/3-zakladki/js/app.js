@@ -4,6 +4,7 @@ const tabLink = document.querySelectorAll("a.tab-link")
 const tabContent = document.querySelectorAll("div.tab-content")
 const tabContentActive = document.querySelectorAll("div.tab-content-active")
 for (const el of tabEl) {el.addEventListener("click", e=> {
-  console.log("Kliknięto!")
-  el.classList.add("tab-el-active")
+  console.log("Kliknięto!");
+  tabElActive.classList.remove("tab-el-active");
+  el.classList.add("tab-el-active");
 })}
