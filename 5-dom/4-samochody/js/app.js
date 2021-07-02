@@ -4,8 +4,7 @@ const car=document.getElementsByClassName("car")
 const carSimpleData=document.getElementsByClassName("car-simple-data")
 for (const el of button){
   el.addEventListener("click", e => {
-    const detail=el.closest(".car")
-    detail.children[3].removeAttribute("style")
+    console.log(e);
     }
 )}
 
