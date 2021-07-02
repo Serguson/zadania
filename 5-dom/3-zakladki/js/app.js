@@ -1,4 +1,4 @@
-const tabEl = document.querySelectorAll("li.tab-el")
+const tabElActive = document.querySelectorA("li.tab-el-active")
 const tabLink = document.querySelectorAll("li.a.tab-link")
 for (const el of tabEl) {
   el.addEventLister("click", e=> {
