@@ -9,6 +9,6 @@ for (const el of button){
     console.log("car");
     const car = el.closest(".car");
     car.children[1].removeAttribute("style");
-    el.innerHtml("Schowaj detale");
+    el.querySelector("#text").innerText("Schowaj detale");
   }
 )}
