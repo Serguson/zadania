@@ -6,6 +6,8 @@ const carSimpleData=document.getElementsByClassName("car-simple-data")
 for (const el of car){
   el.addEventListener("click", e => {
     console.log(e);
-    console.log("car");
+    console.log("car");ra
+    if (e.originalTarget==="button"){
+      console.log("jest!")}
   }
 )}
