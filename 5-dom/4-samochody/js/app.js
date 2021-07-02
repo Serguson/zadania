@@ -6,3 +6,4 @@ for (const el of button){
   el.addEventListener("click", e => {
     const detail=el.closest(".car")}
 )}
+const detail=button[0].closest(".car")
