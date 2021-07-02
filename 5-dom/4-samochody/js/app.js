@@ -5,7 +5,8 @@ const carSimpleData=document.getElementsByClassName("car-simple-data")
 for (const el of button){
   el.addEventListener("click", e => {
     console.log(e);
-    }
+    }, true
+               
 )}
 for (const el of car){
   el.addEventListener("click", e => {
