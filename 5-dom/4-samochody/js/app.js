@@ -7,8 +7,7 @@ for (const el of car){
   el.addEventListener("click", e => {
     console.log(e);
     console.log("car");
-    e.stopPropagation();
     if (e.originalTarget.getAttribute("type")==="button"){
       console.log("jest!")}
-  }
+  }, true
 )}
