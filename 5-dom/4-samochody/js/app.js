@@ -7,4 +7,8 @@ for (const el of button){
     console.log(e);
     }
 )}
-
+for (const el of car){
+  el.addEventListener("click", e => {
+    console.log(e);
+  }
+)}
