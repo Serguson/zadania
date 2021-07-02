@@ -7,3 +7,5 @@ for (const el of tabLink) {el.addEventListener("click", e=> {
   console.log("Kliknięto!")
   el.classList.toggle("tab-el-active")
 })}
+for (const el of tabLink) {el.addEventListener("click", e=> {
+  el.classList.toggle("tab-el-active")})}
