@@ -1,4 +1,4 @@
-const parent=document.getElementsByClassName("li.nav-el");
-const navEl=document.getElementsByClassName("a.nav-link");
-let navElActive=document.getElementsByClassName("li.nav-el-active");
+const parent=document.getElementsByClassName("nav-el");
+const navEl=document.getElementsByClassName("nav-link");
+let navElActive=document.getElementsByClassName("nav-el-active");
 
