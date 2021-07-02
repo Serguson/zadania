@@ -7,6 +7,7 @@ el.addEventListener("click", e => {
                         e.preventDefault();
                        console.log ("Kliknięto!");
                        e.currentTarget.classList.toggle("nav-el-active");
+                       navElAvctive.classList.remove("nav-el-active")
                      
 })
 }
