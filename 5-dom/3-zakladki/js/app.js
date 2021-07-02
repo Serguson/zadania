@@ -1,5 +1,5 @@
 const tabEl = document.querySelectorAll ("li.tab-el")
 const tabElActive = document.querySelectorAll("li.tab-el-active")
-const tabLink = document.querySelectorAll("tab-link")
-const tabContent = document.querySelectorAll("tab-content")
+const tabLink = document.querySelectorAll("a.tab-link")
+const tabContent = document.querySelectorAll("a.tab-content")
 const tabContentActive = document.querySelectorAll("tab-content-active")
