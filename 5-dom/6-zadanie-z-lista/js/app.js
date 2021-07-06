@@ -1,6 +1,7 @@
 const add=document.querySelector("#add");
 const list=document.querySelector(".list");
-const listSize=document.getElementsByClassName("element")
+const listSize=document.getElementsByClassName("element");
+const elements=document.getElementsByClassName("list");
 let counter=listSize.length
 
 function addElement (nr) {
@@ -17,7 +18,7 @@ add.addEventListener("click", e => {
   addElement(counter++);
 })
 
-for (const el of list){
+for (const el of elements){
   el.addEventListener ("click", e => {
    if (e.target.classList.contains("delete")){
      e.target.closest(".element").remove();}
