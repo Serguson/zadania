@@ -5,6 +5,7 @@ const carSimpleData=document.getElementsByClassName("car-simple-data")
 for (const el of button) {
   el.addEventListener("click", e => {
     if (el.innerText==="POKAŻ DETALE") {el.innerText="SCHOWAJ DETALE"} else {el.innerText="POKAŻ DETALE"};
+    if (car.children[1].style.display==="none") {car.children[1].style.display="block"} else {car.children[1].style.display="none"};
   })}
                                                                             
 
