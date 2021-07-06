@@ -1,7 +1,7 @@
 const add=document.querySelector("#add");
 const list=document.querySelector(".list");
 const listSize=document.getElementsByClassName("element")
-let counter=0
+let counter=listSize.length
 
 function addElement (nr) {
   const newElement=document.createElement("div");
