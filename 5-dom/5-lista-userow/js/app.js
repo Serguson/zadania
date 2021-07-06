@@ -3,7 +3,7 @@ const form=document.querySelector("form");
 const userList=document.querySelector(".user-list");
 const name=document.querySelector("#name");
 const phone=document.querySelector("#phone");
-const del=document.querySelector(".btn user-delete")
+const button=document.getElementsByClassList("button")
 
 function addUser (name, phone) {
   const newUser=document.createElement("li");
@@ -22,3 +22,11 @@ function addUser (name, phone) {
     name.value=""
     phone.value=""
   }})
+
+for (const el of button){
+  el.addEventListener("click", e => {
+    if (e.target.classList.contain("user-delete")){
+      e.target.closest(".user").remove();}
+  }
+                      }
+        
