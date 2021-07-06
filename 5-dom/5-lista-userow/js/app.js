@@ -5,5 +5,5 @@ for (const el of form) {
 el.addEventListener("submit", {
   const newUser = document.createElement("li");
   newUser.classList.add("user")
-  userList.appendChild("newUser")
+  userList.appendChild(newUser)
   })
