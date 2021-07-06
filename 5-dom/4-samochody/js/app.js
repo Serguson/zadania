@@ -6,6 +6,7 @@ for (const el of button) {
   el.addEventListener("click", e => {
     if (el.innerText==="POKAŻ DETALE") {el.innerText="SCHOWAJ DETALE"} else {el.innerText="POKAŻ DETALE"};
     if (el.closest(".car").children[1].style.display==="none") {el.closest(".car").children[1].style.display="block"} else {el.closest(".car").children[1].style.display="none"};
+    el.closest(".car").classList.toggle("car-show-detail");
   })}
                                                                             
 
