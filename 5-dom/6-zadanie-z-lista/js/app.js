@@ -1,5 +1,6 @@
 const add=document.querySelector("#add");
 const list=document.querySelector(".list");
+const listSize=document.getElementByClassName("element")
 let counter=0
 
 function addElement (nr) {
