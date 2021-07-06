@@ -16,11 +16,10 @@ function addUser (name, phone) {
   userList.append(newUser);
 }
 
-for (const el of form) {
-  el.addEventListener("submit", e => {
+  form.addEventListener("submit", e => {
     e.preventDefault();
   if (name.value!=="" && phone.value!=="") {
     addUser (name.value, phone.value);
     name.value=""
     phone.value=""
-  }})}
+  }})
