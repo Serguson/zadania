@@ -27,6 +27,6 @@ for (const el of button){
   el.addEventListener("click", e => {
     if (e.target.classList.contain("user-delete")){
       e.target.closest(".user").remove();}
-  }
+  })
                       }
         
