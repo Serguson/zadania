@@ -17,7 +17,7 @@ add.addEventListener("click", e => {
   addElement(counter++);
 })
 
-for (const el of listSize){
+for (const el of list){
   el.addEventListener ("click", e => {
    if (e.target.classList.contains("delete")){
      e.target.closest(".element").remove();}
