@@ -15,4 +15,4 @@ function addElement (nr) {
 add.addEventListener("click", e => {
   this.preventDefault();
   addElement(counter++);
-}
+})
