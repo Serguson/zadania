@@ -21,5 +21,5 @@ for (const el of listSize){
   el.addEventListener ("click", e => {
    if (e.target.classList.contains("delete")){
      e.target.closest(".element").remove();}
-  })
+  })}
         
