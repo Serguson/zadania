@@ -8,9 +8,9 @@ function addUser (name, phone) {
   const newUser=document.createElement("li");
   newUser.classList.add("user");
   const newUserInner=document.querySelector("#newUser").content.cloneNode(true);
-  element.append(newUserInner);
-  element.querySelector(".user-name").innerText=name;
-  element.querySelector(".user-phone").innerText=phone;
+  newUser.append(newUserInner);
+  newUser.querySelector(".user-name").innerText=name;
+  newUser.querySelector(".user-phone").innerText=phone;
   userList.append(newUser);
 }
 
