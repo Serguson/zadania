@@ -25,7 +25,7 @@ for (const el of listSize) {
        const newElementInner = document.querySelector("#element-list").content.cloneNode(true);
        newElement.append(newElementInner);
        list.append(newElement);
-    } else if (e.target.classList.contains("delete") {
+    } else if (e.target.classList.contains("delete")) {
                e.target.closest(".element").remove();}
                       }(}
        
