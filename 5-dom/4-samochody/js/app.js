@@ -9,7 +9,7 @@ for (const el of button){
     console.log("car");
     const car = el.closest(".car");
      if(car.children[1].hasAttribute("style")){car.children[1].removeAttribute("style")} else{car.children[1].addAttribute("style")};
-    if (this.textContent==="Pokaż detale") {this.textContent="Schowaj detale"} else {this.textContent="Pokaż detale"};
+    if (this.textContent==="\n                            Pokaż detale\n                        ") {this.textContent="\n                            Schowaj detale\n                        "} else {this.textContent="\n                            Pokaż detale\n                        "};
     car.classList.toggle("car-show-detail");
   }
 )}
