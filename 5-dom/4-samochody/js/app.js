@@ -8,7 +8,7 @@ for (const el of button){
     console.log(e);
     console.log("car");
     const car = el.closest(".car");
-    car.children[1].removeAttribute("style");
+    if(car.children[1].hasAttribute("style")){car.children[1].removeAttribute("style")} else{car.children[1].addAttribute("style")};
     el.innerText="Schowaj detale";
     car.classList.toggle("car-show-detail");
   }
