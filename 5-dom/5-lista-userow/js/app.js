@@ -25,7 +25,7 @@ function addUser (name, phone) {
 
 for (const el of button){
   el.addEventListener("click", e => {
-    if (e.target.classList.contain("user-delete")){
+    if (e.target.classList.contains("user-delete")){
       e.target.closest(".user").remove();}
   })
                       }
