@@ -4,7 +4,7 @@ const form=document.querySelector("#form");
 const userList=document.getElementsByClassName("user-list");
 const name=document.querySelector("#name");
 const phone=document.querySelector("#phone");
-}
+})
 
 function addUser (name, phone) {
   const newUser=document.createElement("li");
