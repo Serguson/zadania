@@ -3,7 +3,7 @@ const form=document.querySelector("form");
 const userList=document.querySelector(".user-list");
 const name=document.querySelector("#name");
 const phone=document.querySelector("#phone");
-const delete=document.querySelector(".btn user-delete")
+const del=document.querySelector(".btn user-delete")
 
 function addUser (name, phone) {
   const newUser=document.createElement("li");
