@@ -1,3 +1,3 @@
-const user=document.getElementByClassName("user")
-const form=document.getElementByClassName("form")
-const userList=document.getElementByClassName("user-list")
+const user=document.getElementsByClassName("user")
+const form=document.getElementsByClassName("form")
+const userList=document.getElementsByClassName("user-list")
