@@ -8,8 +8,8 @@ for (const el of button){
     console.log(e);
     console.log("car");
     const car = el.closest(".car");
-    if(car.children[1].hasAttribute("style")){car.children[1].setAttribute("display", "flex")} else{car.children[1].setAttribute("display", "none")};
-    el.innerText="Schowaj detale";
+     if(car.children[1].hasAttribute("style")){car.children[1].removeAttribute("style")} else{car.children[1].addAttribute("style")};
+    if (this.textContent==="Pokaż detale") {this.textContent="Schowaj detale"} else {this.textContent="Pokaż detale");
     car.classList.toggle("car-show-detail");
   }
 )}
