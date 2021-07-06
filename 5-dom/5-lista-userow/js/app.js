@@ -1,6 +1,6 @@
 const user=document.getElementsByClassName("user");
-const form=document.getElementsByClassName("form");
-const userList=document.getElementsByClassName("user-list");
+const form=document.querySelector(".form");
+const userList=document.querySelector(".user-list");
 const name=document.querySelector("#name");
 const phone=document.querySelector("#phone");
 
