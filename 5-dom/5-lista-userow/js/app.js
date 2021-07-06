@@ -4,6 +4,7 @@ const userList=document.querySelector(".user-list");
 const name=document.querySelector("#name");
 const phone=document.querySelector("#phone");
 const button=document.getElementsByClassName("btn")
+const users=document.getElementsByClassName("user-list");
 
 function addUser (name, phone) {
   const newUser=document.createElement("li");
@@ -23,7 +24,7 @@ function addUser (name, phone) {
     phone.value=""
   }})
 
-for (const el of userList){
+for (const el of users){
   el.addEventListener("click", e => {
     if (e.target.classList.contains("user-delete")){
       e.target.closest(".user").remove();}
