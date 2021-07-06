@@ -13,6 +13,6 @@ function addElement (nr) {
 }
 
 add.addEventListener("click", e => {
-  this.preventDefault();
+  e.preventDefault();
   addElement(counter++);
 })
