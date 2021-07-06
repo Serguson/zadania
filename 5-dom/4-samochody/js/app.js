@@ -10,5 +10,6 @@ for (const el of button){
     const car = el.closest(".car");
     car.children[1].removeAttribute("style");
     el.innerText="Schowaj detale";
+    car.classList.toggle("car-show-detail");
   }
 )}
