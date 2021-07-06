@@ -27,6 +27,6 @@ for (const el of listSize) {
        list.append(newElement);
     } else if (e.target.classList.contains("delete")) {
                e.target.closest(".element").remove();}
-                      }(}
+  })}
        
         
