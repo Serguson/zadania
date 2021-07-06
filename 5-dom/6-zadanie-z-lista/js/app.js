@@ -7,7 +7,7 @@ function addElement (nr) {
   newElement.classList.add("element");
   const newElementInner = document.querySelector("#element-list").content.cloneNode(true);
   newElement.append(newElementInner);
-  newElement.querySelector(".element-title").innerHtml=`Element numer ${counter}`;
+  newElement.querySelector(".element-title").innerHtml=`Element numer`;
   list.append(newElement);
 }
 
