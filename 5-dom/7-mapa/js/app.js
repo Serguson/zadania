@@ -20,6 +20,6 @@ const mapMarkers = document.getElementsByClassName("map-marker");
 
 for (const el of mapMarkers) {
   el.addEventListener("mouseover", e => {
-    mapTooltip.innerHtml("<h2>Nazwa miasta</h2> <div>Population: <strong>Populacja miasta</strong></div>");
+    mapTooltip.innerHtml="<h2>Nazwa miasta</h2> <div>Population: <strong>Populacja miasta</strong></div>";
     mapTooltip.style.left=`${e.offsetX}+30px`;
     mapTooltip.style.top=`${e.offsetY}+30px`})}
