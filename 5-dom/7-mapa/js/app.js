@@ -5,6 +5,7 @@ element.setAttribute("href", "cities[el].href");
 element.classList.add("map-marker");
 element.dataset.name="cities[el].name";
 element.dataset.population="cities[el].population";
+  console.log(cities[el].map_x)
 const x=cities[el].map_x;
 const y=cities[el].map_y;
 element.style=`left: ${x}px; top: ${y}px`;
