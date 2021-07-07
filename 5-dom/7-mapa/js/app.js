@@ -1,17 +1,17 @@
 const map=document.querySelector(".map");
 
-for (i=0;i<cities.length;i++){
+cities.forEach( el => {
 const element=document.createElement("a");
-element.setAttribute("href", "cities[i].href");
+element.setAttribute("href", "cities[el].href");
 element.classList.add("map-marker");
-element.dataset.name="cities[i].name";
-element.dataset.population="cities[i].population";
-console.log("cities[i].map_x");
-const x="cities[i].map_x";
-const y="cities[i].map_y";
+element.dataset.name="cities[el].name";
+element.dataset.population="cities[el].population";
+console.log("cities[el].map_x");
+const x=cities[el].map_x";
+const y="cities[el].map_y";
 element.style=`left: ${x}px; top: ${y}px`;
 map.appendChild(element);
-}
+})
 
 const mapTooltip=document.createElement("div");
 mapTooltip.classList.add("map-tooltip");
