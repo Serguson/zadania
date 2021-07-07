@@ -5,8 +5,8 @@ element.setAttribute("href", "cities[el].href");
 element.classList.add("map-marker");
 element.dataset.name="cities[el].name";
 element.dataset.population="cities[el].population";
-const x=cities[el].map_x
-const y=cities[el].map_y
+const x=cities[el].map_x;
+const y=cities[el].map_y;
 element.style=`left: ${x}px; top: ${y}px`;
 map.appendChild(element);
 })
