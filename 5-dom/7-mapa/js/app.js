@@ -15,7 +15,7 @@ element.dataset.population=`${population}`;
 console.log(`${map_x}`);
 const x=`${map_x}`;
 const y=`${map_y}`;
-element.style=`left: `${x}`px; top: `${y}`px`;
+element.style="left: `${x}`px; top: `${y}`px";
 map.appendChild(element);
 })
 
@@ -27,5 +27,5 @@ const mapMarkers = document.getElementsByClassName("map-marker");
 for (const el of mapMarkers) {
   el.addEventListener("mouseover", e => {
     mapTooltip.innerHtml="<h2>Nazwa miasta</h2> <div>Population: <strong>Populacja miasta</strong></div>";
-    mapTooltip.style.left=`${e.offsetX}+30px`;
-    mapTooltip.style.top=`${e.offsetY}+30px`})}
+    mapTooltip.style.left="`${e.offsetX}`+30px";
+    mapTooltip.style.top="`${e.offsetY}`+30px"})}
