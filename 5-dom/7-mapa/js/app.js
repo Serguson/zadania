@@ -8,13 +8,13 @@ cities.forEach (el => {
     map_y,
     href,} = el;
 const element=document.createElement("a");
-element.setAttribute("href", "href");
+element.setAttribute("href", "${href}");
 element.classList.add("map-marker");
-element.dataset.name="name";
-element.dataset.population="population";
-console.log("map_x");
-const x="map_x";
-const y="map_y";
+element.dataset.name="${name}";
+element.dataset.population="${population}";
+console.log("${map_x}");
+const x="${map_x}";
+const y="${map_y}";
 element.style=`left: ${x}px; top: ${y}px`;
 map.appendChild(element);
 })
