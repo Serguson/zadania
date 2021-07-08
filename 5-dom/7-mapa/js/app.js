@@ -31,7 +31,7 @@ for (const el of mapMarkers) {
     population,
     map_x,
     map_y,
-    href,} = el;};
+    href,} = el;
     console.log(e);
     mapTooltip.innerHTML=`<h2>${name}</h2> <div>Population: <strong>${population}</strong></div>`;
     mapTooltip.style.left=`${e.pageX}+30px`;
