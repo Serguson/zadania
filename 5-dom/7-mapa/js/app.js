@@ -17,11 +17,7 @@ element.style=`left: ${map_x}px; top: ${map_y}px`;
 map.appendChild(element);
 })
 
-const mapTooltip=document.createElement("div");
-map.appendChild(mapTooltip);
-mapTooltip.classList.add("map-tooltip");
-mapTooltip.style="left: -9999px; top: -9999px";
-const mapMarkers = document.getElementsByClassName("map-marker");
+
 
 cities.forEach (
   el => {
@@ -31,6 +27,11 @@ cities.forEach (
     map_x,
     map_y,
     href,} = el;
+    const mapTooltip=document.createElement("div");
+    map.appendChild(mapTooltip);
+    mapTooltip.classList.add("map-tooltip");
+    mapTooltip.style="left: -9999px; top: -9999px";
+    const mapMarkers = document.getElementsByClassName("map-marker");
     for (const element of mapMarkers) 
     {
        element.addEventListener("mouseover", e =>
