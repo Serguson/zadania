@@ -13,9 +13,7 @@ element.classList.add("map-marker");
 element.dataset.name=`${name}`;
 element.dataset.population=`${population}`;
 console.log(`${map_x}`);
-const x=`${map_x}`;
-const y=`${map_y}`;
-element.style="left: `${x}`px; top: `${y}`px";
+element.style="left: `${map_x}px; top: ${map_y}px`;
 map.appendChild(element);
 })
 
