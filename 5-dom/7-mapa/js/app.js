@@ -20,11 +20,12 @@ cities.forEach (el => {
   console.log(`${map_x}`);
   element.style=`left: ${map_x}px; top: ${map_y}px`;
   map.appendChild(element);
-  for (const element of mapMarkers) {
+})
+
+for (const element of mapMarkers) {
        element.addEventListener("mouseover", e =>{
           console.log(e);
           mapTooltip.innerHTML=`<h2>${name}</h2> <div>Population: <strong>${population}</strong></div>`;
           mapTooltip.style.left=`${e.pageX}+30px`;
           mapTooltip.style.top=`${e.pageY}+30px`;
        })}
-})
