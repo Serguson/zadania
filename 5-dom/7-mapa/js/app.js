@@ -23,12 +23,13 @@ cities.forEach (el => {
 })
 
 for (const element of mapMarkers) {
-    const {
-    name,
-    population,
-    map_x,
-    map_y,
-    href,} = el;
+    cities.forEach (el => {
+      const {
+       name,
+       population,
+       map_x,
+       map_y,
+       href,} = el;})
        element.addEventListener("mouseover", e =>{
           console.log(e);
           mapTooltip.innerHTML=`<h2>${name}</h2> <div>Population: <strong>${population}</strong></div>`;
