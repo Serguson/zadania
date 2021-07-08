@@ -23,18 +23,22 @@ mapTooltip.classList.add("map-tooltip");
 mapTooltip.style="left: -9999px; top: -9999px";
 const mapMarkers = document.getElementsByClassName("map-marker");
 
-cities.forEach (el => {
+cities.forEach (
+  el => {
    const {
     name,
     population,
     map_x,
     map_y,
     href,} = el;
-    for (const element of mapMarkers) {
-       element.addEventListener("mouseover", e =>{
+    for (const element of mapMarkers) 
+    {
+       element.addEventListener("mouseover", e =>
+                                {
           console.log(e);
           mapTooltip.innerHTML=`<h2>${name}</h2> <div>Population: <strong>${population}</strong></div>`;
           mapTooltip.style.left=`${e.pageX}+30px`;
-          mapToltip.style.top=`${e.pageY}+30px`;}
+          mapToltip.style.top=`${e.pageY}+30px`;
+       }
                            )
-                                })
+    } })
