@@ -29,6 +29,6 @@ for (const element of mapMarkers) {
           const population = e.originalTarget.dataset.population;
           console.log(e);
           mapTooltip.innerHTML=`<h2>${name}</h2> <div>Population: <strong>${population}</strong></div>`;
-          mapTooltip.style.left=`${e.pageX}+30px`;
-          mapTooltip.style.top=`${e.pageY}+30px`;
+          mapTooltip.style.left=`${e.pageX}+30+"px"`;
+          mapTooltip.style.top=`${e.pageY}+30+"px"`;
        })}
