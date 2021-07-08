@@ -29,9 +29,9 @@ cities.forEach (el => {
     population,
     map_x,
     map_y,
-    href,} = el
-    for (const el of mapMarkers) {
-       el.addEventListener("mouseover", e =>{
+    href,} = el;
+    for (const element of mapMarkers) {
+       element.addEventListener("mouseover", e =>{
           console.log(e);
           mapTooltip.innerHTML=`<h2>${name}</h2> <div>Population: <strong>${population}</strong></div>`;
           mapTooltip.style.left=`${e.pageX}+30px`;
