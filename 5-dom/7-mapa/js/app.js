@@ -18,6 +18,7 @@ map.appendChild(element);
 })
 
 const mapTooltip=document.createElement("div");
+map.appendChild(mapTooltip);
 mapTooltip.classList.add("map-tooltip");
 mapTooltip.style="left: -9999px; top: -9999px";
 const mapMarkers = document.getElementsByClassName("map-marker");
