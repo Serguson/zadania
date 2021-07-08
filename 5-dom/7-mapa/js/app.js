@@ -25,6 +25,6 @@ cities.forEach (el => {
           console.log(e);
           mapTooltip.innerHTML=`<h2>${name}</h2> <div>Population: <strong>${population}</strong></div>`;
           mapTooltip.style.left=`${e.pageX}+30px`;
-          mapToltip.style.top=`${e.pageY}+30px`;
+          mapTooltip.style.top=`${e.pageY}+30px`;
        })}
 })
