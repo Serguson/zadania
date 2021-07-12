@@ -34,7 +34,7 @@ for (const element of mapMarkers) {
          const tooltipTop=e.target.offsetTop+30;
           mapTooltip.style=`left: ${tooltipLeft}px; top: ${tooltipTop}px`;
        })
-      element.addEventListener("mousemove, e => {
+      element.addEventListener("mousemove", e => {
           console.log(e);
 })
 }
