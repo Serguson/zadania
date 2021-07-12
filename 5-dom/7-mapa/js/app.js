@@ -30,14 +30,14 @@ for (const element of mapMarkers) {
           console.log(e);
           mapTooltip.innerHTML=`<h2>${name}</h2> <div>Population: <strong>${population}</strong></div>`;
           console.log(e.target);
-         const tooltipLeft=e.target.pageX+30;
-         const tooltipTop=e.target.pageY+30;
+         const tooltipLeft=e.pageX+30;
+         const tooltipTop=e.pageY+30;
           mapTooltip.style=`left: ${tooltipLeft}px; top: ${tooltipTop}px`;
        })
       element.addEventListener("mousemove", e => {
           console.log(e);
-        const tooltipLeft=e.target.pageX+30
-        const tooltipTop=e.target.pageY+30
+        const tooltipLeft=e.pageX+30
+        const tooltipTop=e.pageY+30
         mapTooltip.style=`left: ${tooltipLeft}px; top: ${tooltipTop}px`;
 })
 }
