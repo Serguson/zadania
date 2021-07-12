@@ -29,7 +29,7 @@ for (const element of mapMarkers) {
           const population = e.originalTarget.dataset.population;
           console.log(e);
           mapTooltip.innerHTML=`<h2>${name}</h2> <div>Population: <strong>${population}</strong></div>`;
-          mapTooltip.style["left"]=`${e.target.offsetLeft}+30+px`;
+          mapTooltip.style["left"]=`${e.target.offsetLeft}`;
           console.log(mapTooltip.style.left);
-          mapTooltip.style["top"]=`${e.target.offsetTop}+30+px`;
+          mapTooltip.style["top"]=`${e.target.offsetTop}`;
        })}
