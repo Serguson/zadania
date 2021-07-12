@@ -36,5 +36,5 @@ for (const element of mapMarkers) {
        })
       element.addEventListener("mousemove, e => {
           console.log(e);
-}
+})
 }
