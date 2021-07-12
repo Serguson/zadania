@@ -31,7 +31,9 @@ for (const element of mapMarkers) {
           mapTooltip.innerHTML=`<h2>${name}</h2> <div>Population: <strong>${population}</strong></div>`;
           console.log(e.target);
          console.log(e.target.offsetLeft)
-          mapTooltip.style.left="e.target.offsetLeft";
+         const tooltipLeft=e.target.offsetLeft;
+         const tooltipTop=e.target.offsetTom;
+          mapTooltip.style.left=`${tooltipLeft}+30+"px"`;
           console.log(mapTooltip.style.left);
-          mapTooltip.style.top="e.target.offsetTop";
+          mapTooltip.style.top=`${tooltipTop}+30+"px"`;
        })}
