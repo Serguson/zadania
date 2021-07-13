@@ -7,3 +7,4 @@ for (const el of navLink){
     console.log(e);
     el.parentElement.classList.toggle("nav-el-active");
     })
+}
