@@ -44,4 +44,5 @@ for (const element of mapMarkers) {
     console.log(e);
     mapTooltip.style=`left: -9999px; top: -9999px`;
     mapTooltip.innerHTML="";
+  })
 }
