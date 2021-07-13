@@ -36,8 +36,8 @@ for (const element of mapMarkers) {
        })
       element.addEventListener("mousemove", e => {
           console.log(e);
-        const tooltipLeft=e.pageX+30
-        const tooltipTop=e.pageY+30
+        const tooltipLeft=e.target.offsetLeft+30
+        const tooltipTop=e.target.offsetHeight+30
         mapTooltip.style=`left: ${tooltipLeft}px; top: ${tooltipTop}px`;
 })
 }
