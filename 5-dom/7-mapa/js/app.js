@@ -40,4 +40,8 @@ for (const element of mapMarkers) {
         const tooltipTop=e.target.offsetTop+30
         mapTooltip.style=`left: ${tooltipLeft}px; top: ${tooltipTop}px`;
 })
+  element.addEventListener("mouseout", e => {
+    console.log(e);
+    mapTooltip.style=`left: -9999px; top: -9999px`;
+    mapTooltip.innerHTML="";
 }
