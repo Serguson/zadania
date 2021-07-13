@@ -8,6 +8,6 @@ for (const el of navLink){
     el.parentElement.classList.toggle("nav-el-active");
     const link=el.getAttribute("href");
     console.log(link);
-    document.querySelector(${link}).scrollIntoView();
+    document.querySelector(link).scrollIntoView();
     })
 }
