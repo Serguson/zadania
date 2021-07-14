@@ -4,7 +4,7 @@ const a=menu.getElementsByTagName("a");
 const li=menu.getElementsByTagName("li");
 function elementTransitionEnd () {
   this.removeEventListener("transitionend", elementTransitionEnd);
-  console.log(el.getAttribute("href"))}
+  console.log(this.parentElement.getAttribute("href"))}
   
 for (const el of li){
   el.addEventListener("mouseover", e => {
