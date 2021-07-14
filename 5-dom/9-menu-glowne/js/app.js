@@ -14,7 +14,7 @@ for (const el of a){
     e.preventDefault();
     console.log (e.target);
     for (const element of li){
-      if (element===el.parentElement){el.classList.add("expand")} else {el.classList.add("collapsed")}}
+      if (element===el.parentElement){element.classList.add("expand")} else {element.classList.add("collapsed")}}
   })
 }
     
