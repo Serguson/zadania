@@ -12,7 +12,9 @@ for (const el of a){
   el.addEventListener("click", e => {
     console.log (e);
     e.preventDefault();
-    console.log (e.target)
+    console.log (e.target);
+    for (const element of li){
+      if (element===el.parentElement){el.classList.add("expand")} else {el.classList.add("collapsed")}}
   })
 }
     
