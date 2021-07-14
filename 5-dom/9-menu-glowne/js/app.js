@@ -12,6 +12,7 @@ for (const el of a){
   el.addEventListener("click", e => {
     console.log (e);
     e.preventDefault();
+    console.log (e.target)
   })
 }
     
