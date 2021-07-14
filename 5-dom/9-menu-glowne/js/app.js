@@ -2,6 +2,10 @@ const menu=document.getElementById("menu")
 menu.classList.add("menu");
 const a=menu.getElementsByTagName("a");
 const li=menu.getElementsByTagName("li");
+function elementTransitionEnd () {
+  this.removeEventListener("transitionend", elementTransitionEnd);
+  console.log(el.getAttribute("href"))}
+  
 for (const el of li){
   el.addEventListener("mouseover", e => {
     for (const element of li) {element.classList.remove("active")};
@@ -14,7 +18,8 @@ for (const el of a){
     e.preventDefault();
     console.log (e.target);
     for (const element of li){
-      if (element===el.parentElement){element.classList.add("expand")} else {element.classList.add("collapsed")}}
+      if (element===el.parentElement){element.classList.add("expand")} else {element.classList.add("collapsed")}};
+    el.parentElement.addEventListener("transitionend", elementTransitionEnd)
   })
 }
     
