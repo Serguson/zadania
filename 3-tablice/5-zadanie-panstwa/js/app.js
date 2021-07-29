@@ -2,13 +2,14 @@
     let sumPercent=0
     let sumFertility=0
     let sumAge=0
+    let Poland=null
 countries.forEach(el => 
   { 
     const {id, name, population, grow, net_change, density, land_area_in_km, fertility_rate=null, medium_age, urban_population_in_percent, world_area_in_percent} = el;
     sumPopulation+=population;
     sumPercent+=world_area_in_percent;
     sumFertility+=fertility_rate;
-    sumAge+=age;
+    sumAge+=medium_age;
     console.log (name);
   })
   console.log (`Liczba ludności wszystkich państw wynosi ${sumPopulation}.`)
@@ -29,4 +30,5 @@ console.log (`Jest ${growNegative.length} państw z ujemnym przyrostem naturalny
 console.log(`Suma zajmowanej powierzchni ziemi przez państwa wynosi ${sumPercent.toFixed(2)} procenta.`)
 console.log(`Średnia dzietność na świecie wynosi ${averageFertility.toFixed(2)}.`)
 console.log (`Średnia wieku na świecie wynosi ${averageAge.toFixed(2)}.`)
-
+const poland = countries.find(el=>el.name==="Poland")
+console.log (poland)
