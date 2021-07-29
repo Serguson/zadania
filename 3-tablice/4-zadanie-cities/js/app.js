@@ -2,8 +2,7 @@ let sumPeople=0
 let bigCities=[]
 let smallCities=[]
 cities.forEach (el=> {
-  const {name, township, province, area, people, dentensity,} = el;
-  sumPeople+=people
+  sumPeople+=el.people
 }
 const averagePeople = sumPeople/cities.length
 const firstBigTown = cities.find (el=> el.people>10000)
