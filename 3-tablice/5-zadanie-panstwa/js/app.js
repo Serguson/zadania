@@ -31,4 +31,15 @@ console.log(`Suma zajmowanej powierzchni ziemi przez państwa wynosi ${sumPercen
 console.log(`Średnia dzietność na świecie wynosi ${averageFertility.toFixed(2)}.`)
 console.log (`Średnia wieku na świecie wynosi ${averageAge.toFixed(2)}.`)
 const poland = countries.find(el=>el.name==="Poland")
-console.log (poland)
+console.log (` Numer ID: ${poland.id};\n
+               Nazwa Państwa: ${poland.name};\n
+               Populacja: ${poland.population};\n
+               Wzrost liczby ludności: ${poland.grow};\n
+               Zmiana netto: ${poland.net_change};\n
+               Gęstość zaludnienia: ${poland.density};\n
+               Powierzchnia Państwa: ${poland.land_area_in_km};\n
+               Wskaźnik dzietności: ${poland.fertility_rate};\n
+               Średni wiek: ${poland.medium_age};\n
+               Populacja miast w procentach: ${poland.urban_population_in_percent};\n
+               Procent powierzchni świata: ${poland.world_area_in_percent};\n`)
+if (poland.medium.age>averageAge) {console.log (`Średni wiek w Polsce jest większy niż średnia światowa.`) else { console.log (`Średni wiek w Polsce jest mniejszy niż średnia światowa.`)
