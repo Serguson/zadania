@@ -42,4 +42,4 @@ console.log (` Numer ID: ${poland.id};\n
                Średni wiek: ${poland.medium_age};\n
                Populacja miast w procentach: ${poland.urban_population_in_percent};\n
                Procent powierzchni świata: ${poland.world_area_in_percent};\n`)
-if (poland.medium.age>averageAge) {console.log (`Średni wiek w Polsce jest większy niż średnia światowa.`)} else { console.log (`Średni wiek w Polsce jest mniejszy niż średnia światowa.`)
+if (poland.medium.age>averageAge) {console.log (`Średni wiek w Polsce jest większy niż średnia światowa.`)} else { console.log (`Średni wiek w Polsce jest mniejszy niż średnia światowa.`)}
