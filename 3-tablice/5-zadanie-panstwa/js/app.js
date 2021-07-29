@@ -8,7 +8,7 @@ countries.forEach(el =>
     console.log (name);
   })
   console.log (`Liczba ludności wszystkich państw wynosi ${sumPopulation}.`)
-  const averagePopulation = sum/countries.length
+  const averagePopulation = sumPopulation/countries.length
   console.log (`Średnia liczba ludności wynosi ${averagePopulation.toFixed(2)}`)
 
     let growPositive=[]
