@@ -5,4 +5,4 @@ countries.forEach(el =>
     sum+=population;
     console.log (name);
   })
-  console.log (`Liczba ludności wszystkich państw wynosi ${sum}.)
+  console.log (`Liczba ludności wszystkich państw wynosi ${sum}.`)
