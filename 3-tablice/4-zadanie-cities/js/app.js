@@ -6,12 +6,13 @@ cities.forEach (el=> {
 })
 const averagePeople = sumPeople/cities.length
 const firstBigTown = cities.find (el=> el.people>10000)
+console.log(first
 cities.forEach (el=> {
   if (el.people>10000) {bigCities.push(el)} else {smallCities.push(el)}
 })
 console.log (`W Polsce jest ${cities.length} miast.`)
 console.log (`Miasta te zamieszkuje ${sumPeople} osób.`)
-console.log (`Pierwsze miasto w Polsce powyżej 10 000 mieszkańców:\n${firstBigTown}`)
+console.log (`Pierwsze miasto w Polsce powyżej 10 000 mieszkańców:\n${firstBigTown.name}`)
 bigCities.forEach (el=> {
   console.log (el.name)})
 cities.forEach (el=> {
